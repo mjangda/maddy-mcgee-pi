@@ -1,0 +1,4 @@
+# Files we want to ignore
+*.svn/
+*Thumbs.db
+*.DS_Store
