@@ -35,7 +35,7 @@ class ComicManager {
 		// Add image sizes
 		// TODO: should probably be filterable
 		add_image_size( 'comic-full', 880, 2000 );
-		add_image_size( 'comic-medium', 440, 1000 );
+		add_image_size( 'comic-medium', 500, 1000 );
 		add_image_size( 'comic-thumb', 100, 100, true );
 		
 		add_image_size( 'character-thumb-large', 100, 100, true );
