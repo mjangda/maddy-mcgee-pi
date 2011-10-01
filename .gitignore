@@ -2,3 +2,4 @@
 *.svn/
 *Thumbs.db
 *.DS_Store
+*.komodoproject
