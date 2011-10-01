@@ -1,6 +1,7 @@
 <?php
 
 require_once( dirname( __FILE__ ) . '/includes/ComicManager.php' );
+require_once( dirname( __FILE__ ) . '/includes/previous-and-next-post-in-same-taxonomy.php' );
 
 class MaddyMcGee {
 
@@ -84,6 +85,28 @@ class MaddyMcGee {
 	function widgets_init() {
 	}
 	
+	/*
+	function get_quote_character( $post_id = 0 ) {
+		$post_id = self::get_post_id( $post_id );
+		return self::get_synced_post( $post_id, self::character_taxonomy );
+	}
+	
+	function get_quote_episode( $post_id = 0 ) {
+		$post_id = self::get_post_id( $post_id );
+		return self::get_synced_post( $post_id, self::episode_taxonomy );
+	}
+	
+	function get_synced_post( $post_id, $taxonomy ) {
+		$terms = wp_get_object_terms( $post_id, $taxonomy, array( 'fields' => 'ids' ) );
+		
+		if( ! empty( $terms ) && ! is_wp_error( $terms ) ) {
+			$post = x_get_synced_post( (int)$terms[0], $taxonomy );
+			wp_reset_postdata();
+			return $post;
+		}
+		return false;
+	}
+	*/
 }
 
 function mmg() {
