@@ -243,9 +243,14 @@ body {
 	margin: 5px 0;
     }
     .mm-comic-nav {
-	font-size: 42px;
 	overflow: hidden;
     }
+	.mm-comic-nav a {
+	    font-size: 100px;
+	    line-height: 80px;
+	    font-family: Georgia, serif;
+	    text-decoration: none;
+	}
 	.mm-comic-nav a[rel=previous] {
 	    float: left;
 	}

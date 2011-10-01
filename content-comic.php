@@ -29,5 +29,5 @@
 	
 	prev case
 	
-	click should go to next comic
+	click should go to next comic (need caching in next link function)
 </div>
