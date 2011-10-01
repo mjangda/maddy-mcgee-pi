@@ -235,13 +235,18 @@ body {
 	
 /** Comics **/
 #mm-comic {
-    
 }
     .mm-comic-image {
 	border: 10px solid #fff;
 	background: #c4c3d5;
-	margin: 5px 0;
+	margin: 5px 0 15px;
     }
+    .mm-comic-content {
+	font-size: 18px;
+    }
+	.mm-comic-content p {
+	    margin-bottom: 12px;
+	}
     .mm-comic-nav {
 	overflow: hidden;
     }
@@ -257,6 +262,36 @@ body {
 	.mm-comic-nav a[rel=next] {
 	    float: right;
 	}
+    .mm-comic-series-nav {
+	overflow: hidden;
+	padding: 20px 0;
+    }
+	.mm-comic-series-nav a {
+	    width: 33%;
+	    float: left;
+	    text-align: center;
+	    font-size: 18px;
+	    text-decoration: none;
+	    text-transform: uppercase;
+	    font-family: Verdana, Arial, Serif;
+	    color: #c4c3d5;
+	    font-weight: bold;
+	}
+	    .mm-comic-series-nav a:hover,
+	    .mm-comic-series-nav a:active {
+		color: #fff;
+	    }
+	.mm-comic-series-nav a[rel=previous] {
+	    text-align: left;
+	}
+	.mm-comic-series-nav a[rel=first] {
+	    width: 40%;
+	}
+	.mm-comic-series-nav a[rel=next] {
+	    text-align: right;
+	    width: 26%;
+	}
+    
 
 /** Content **/
 #mm-content {

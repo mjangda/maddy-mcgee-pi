@@ -155,9 +155,15 @@ class ComicManager {
 	function parse_query( $query ) {
 		global $wp_the_query;
 		// Check if we're dealing with the main query
-		if( is_home() && ! is_paged() && $query === $wp_the_query ) {
-			$query->set( 'posts_per_page', 1 );
-			$query->set( 'post_type', self::comic_post_type );
+		if( $query === $wp_the_query ) {
+			if( is_home() && ! is_paged() ) {
+				// homepage main query should only pull one comic
+				$query->set( 'posts_per_page', 1 );
+				$query->set( 'post_type', self::comic_post_type );
+			} elseif( is_tax( self::series_taxonomy ) ) {
+				// series should be displayed reverse chronological
+				$query->set( 'order', 'ASC' );
+			}
 		}
 	}
     

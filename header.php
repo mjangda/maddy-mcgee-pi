@@ -41,9 +41,7 @@
 	    </hgroup>
 	    <nav class="mm-menu mm-menu-header">
 		<ul>
-		<?php
-		foreach( MaddyMcGee::get_header_menu_items() as $menu_item_key => $menu_item ) :
-		    ?>
+		<?php foreach( MaddyMcGee::get_header_menu_items() as $menu_item_key => $menu_item ) : ?>
 		    <li class="mm-menu-item mm-menu-header-item mm-menu-header-item-<?php echo $menu_item_key; ?>">
 			<a href="<?php echo home_url( $menu_item_key != 'home' ? $menu_item_key : '' ); ?>">
 			    <?php echo $menu_item['text'];?>
@@ -52,9 +50,7 @@
 			    <?php endif; ?>
 			</a>
 		    </li>
-		    <?php
-		endforeach;
-		?>
+		<?php endforeach; ?>
 		</ul>
 	    </nav>
 	</header>
