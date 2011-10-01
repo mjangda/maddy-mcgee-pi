@@ -1,7 +1,6 @@
 <?php
 
 require_once( dirname( __FILE__ ) . '/includes/ComicManager.php' );
-require_once( dirname( __FILE__ ) . '/includes/previous-and-next-post-in-same-taxonomy.php' );
 
 class MaddyMcGee {
 

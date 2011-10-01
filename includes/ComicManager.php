@@ -1,6 +1,7 @@
 <?php
 
 require( dirname( __FILE__ ) . '/term-to-post_type-sync.class.php' );
+require_once( dirname( __FILE__ ) . '/previous-and-next-post-in-same-taxonomy.php' );
 
 /*
 
@@ -168,8 +169,43 @@ class ComicManager {
 	}
     
 	// get next comic
+	function get_next_comic() {
+		if( function_exists( 'be_get_adjacent_post' ) )
+			return be_get_adjacent_post( true, '', false, self::series_taxonomy );
+		else
+			return get_adjacent_post( false, '', false );
+	}
 	
 	// get previous comic
+	function get_previous_comic() {
+		if( function_exists( 'be_get_adjacent_post' ) )
+			return be_get_adjacent_post( true, '', true, self::series_taxonomy );
+		else
+			return get_adjacent_post( false, '', true );
+	}
+	
+	function get_next_comic_link( $text = 'Next', $attributes = array() ) {
+		$comic = self::get_next_comic();
+		$attributes['rel'] = 'next';
+		return self::get_comic_link( $comic, $text, $attributes );
+	}
+	function get_previous_comic_link( $text = 'Previous', $attributes = array() ) {
+		$comic = self::get_previous_comic();
+		$attributes['rel'] = 'previous';
+		return self::get_comic_link( $comic, $text, $attributes );
+	}
+	
+	function get_comic_link( $comic, $text, $attributes ) {
+		$link = '';
+		if( $comic && isset( $comic->ID ) ) {
+			$attribute_string = '';
+			foreach( (array) $attributes as $attribute_name => $attribute_value ) {
+				$attribute_string .= sprintf( '%s="%s"', sanitize_key( $attribute_name ), esc_attr( $attribute_value ) );
+			}
+			$link = sprintf( '<a href="%s" %s>%s</a>', get_permalink( $comic->ID ), $attribute_string, $text );
+		}
+		return $link;
+	}
 	
 	// get all comics in series
 	

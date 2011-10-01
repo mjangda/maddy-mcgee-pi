@@ -1,15 +1,9 @@
 <div id="mm-comic">
 	<nav class="mm-comic-nav">
 		<?php
-		if( function_exists( 'be_previous_post_link' ) )
-			be_previous_post_link( '%link', '&laquo;', true, '', ComicManager::series_taxonomy );
-		else
-			previous_post_link( '%link', '&laquo;' );
+		echo ComicManager::get_previous_comic_link( '&laquo;' );
+		echo ComicManager::get_next_comic_link( '&raquo;' );
 		
-		if( function_exists( 'be_next_post_link' ) )
-			be_next_post_link( '%link', '&raquo;', true, '', ComicManager::series_taxonomy );
-		else
-			next_post_link( '%link', '&raquo;' );
 		?>
 	</nav>
 	
