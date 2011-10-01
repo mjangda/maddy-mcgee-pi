@@ -17,6 +17,8 @@ class MaddyMcGee {
 		add_action( 'wp_head', array( $this, 'wp_head' ) );
 		add_action( 'wp_footer', array( $this, 'wp_footer' ) );
 		
+		add_filter( 'comic_link_permalink', array( $this, 'comic_link_add_jump' ) );
+		
 	}
 
 	function init() {
@@ -106,6 +108,10 @@ class MaddyMcGee {
 		return false;
 	}
 	*/
+	
+	function comic_link_add_jump( $permalink ) {
+		return sprintf( '%s#comic', $permalink );
+	}
 }
 
 function mmg() {

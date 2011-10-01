@@ -1,3 +1,4 @@
+<a name="comic"></a>
 <div id="mm-comic">
 	<nav class="mm-comic-nav">
 		<?php

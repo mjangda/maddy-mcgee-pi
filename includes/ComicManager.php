@@ -202,7 +202,8 @@ class ComicManager {
 			foreach( (array) $attributes as $attribute_name => $attribute_value ) {
 				$attribute_string .= sprintf( '%s="%s"', sanitize_key( $attribute_name ), esc_attr( $attribute_value ) );
 			}
-			$link = sprintf( '<a href="%s" %s>%s</a>', get_permalink( $comic->ID ), $attribute_string, $text );
+			$permalink = apply_filters( 'comic_link_permalink', get_permalink( $comic->ID ) );
+			$link = sprintf( '<a href="%s" %s>%s</a>', $permalink, $attribute_string, $text );
 		}
 		return $link;
 	}
