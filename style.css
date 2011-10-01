@@ -251,10 +251,11 @@ body {
 	overflow: hidden;
     }
 	.mm-comic-nav a {
-	    font-size: 100px;
+	    font-size: 100px; /* Because we're using &raquo; &laquo; */
 	    line-height: 80px;
 	    font-family: Georgia, serif;
 	    text-decoration: none;
+	    margin-top: -20px; /* to account for the high font size */
 	}
 	.mm-comic-nav a[rel=previous] {
 	    float: left;
