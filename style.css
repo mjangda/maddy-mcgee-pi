@@ -125,7 +125,7 @@ body {
     }
 	body a:hover,
 	body a:active {
-	    color: #c4c3d5
+	    color: #514F66;
 	}
 
 #mm-page {
@@ -238,6 +238,14 @@ body {
     border-bottom: 10px solid #C4C3D5;
     margin-bottom: 4px;
 }
+    #mm-comic a,
+    #mm-comic a:visited {
+	color: #fff;
+    }
+	#mm-comic a:hover,
+	#mm-comic a:active {
+	    color: #C4C3D5;
+	}
     .mm-comic-image {
 	border: 10px solid #fff;
 	background: #c4c3d5;
@@ -245,9 +253,27 @@ body {
     }
     .mm-comic-content {
 	font-size: 18px;
+	line-height: 23px;
+	width: 70%;
+	float: left;
     }
 	.mm-comic-content p {
 	    margin-bottom: 12px;
+	}
+    .mm-comic-meta {
+	float: right;
+	width: 23%;
+	background: #C4C3D5;
+	background: rgba( 196, 195, 213, 7 );
+	padding: 10px;
+	color: #514F66;
+    }
+	#mm-comic .mm-comic-meta a:hover,
+	#mm-comic .mm-comic-meta a:active {
+	    color: #514F66;
+	}
+	.mm-comic-meta span {
+	    display: block;
 	}
     .mm-comic-nav {
 	overflow: hidden;
@@ -266,6 +292,7 @@ body {
 	    float: right;
 	}
     .mm-comic-series-nav {
+	clear: both;
 	overflow: hidden;
 	padding: 20px 0;
     }
@@ -277,6 +304,7 @@ body {
 	    text-decoration: none;
 	    text-transform: uppercase;
 	    font-family: Impact, Arial, Serif;
+	    letter-spacing: 1px;
 	    color: #c4c3d5;
 	}
 	    .mm-comic-series-nav a:hover,
@@ -321,6 +349,8 @@ body {
     #mm-content h2,
     #mm-content h3 {
 	font-family: Impact, Arial, sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 1px;
     }
 
 /** Footer **/
