@@ -1,6 +1,7 @@
 <?php
 
 require( dirname( __FILE__ ) . '/term-to-post_type-sync.class.php' );
+// TODO: plugin needs caching
 require_once( dirname( __FILE__ ) . '/previous-and-next-post-in-same-taxonomy.php' );
 
 /*
@@ -208,14 +209,10 @@ class ComicManager {
 		return $link;
 	}
 	
-	// get all comics in series
-	
 	// get series
 	
 	// get characters
 	
 	// get comics with character
 	
-	// 
-    
 }
