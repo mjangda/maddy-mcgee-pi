@@ -235,6 +235,8 @@ body {
 	
 /** Comics **/
 #mm-comic {
+    border-bottom: 10px solid #C4C3D5;
+    margin-bottom: 4px;
 }
     .mm-comic-image {
 	border: 10px solid #fff;
@@ -271,12 +273,11 @@ body {
 	    width: 33%;
 	    float: left;
 	    text-align: center;
-	    font-size: 18px;
+	    font-size: 24px;
 	    text-decoration: none;
 	    text-transform: uppercase;
-	    font-family: Verdana, Arial, Serif;
+	    font-family: Impact, Arial, Serif;
 	    color: #c4c3d5;
-	    font-weight: bold;
 	}
 	    .mm-comic-series-nav a:hover,
 	    .mm-comic-series-nav a:active {
@@ -297,7 +298,7 @@ body {
 /** Content **/
 #mm-content {
     background: #c4c3d5;
-    color: #fff;
+    color: #514F66;
     padding: 15px 30px;
     overflow: hidden;
 }
@@ -308,6 +309,18 @@ body {
     #mm-sidebar {
 	width: 300px;
 	float: left;
+    }
+    #mm-content a,
+    #mm-content a:visited {
+	color: #fff;
+    }
+    #mm-content a:hover,
+    #mm-content a:active {
+	color: #514F66;
+    }
+    #mm-content h2,
+    #mm-content h3 {
+	font-family: Impact, Arial, sans-serif;
     }
 
 /** Footer **/

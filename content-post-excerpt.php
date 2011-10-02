@@ -1,2 +1,2 @@
-<h3><?php the_title(); ?></h3>
-<?php the_content(); ?>
+<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+<?php the_excerpt(); ?>
