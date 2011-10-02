@@ -7,8 +7,8 @@
 		<?php get_template_part( 'content', 'post-excerpt' ); ?>
 	<?php endwhile; ?>
 	
-	<?php previous_posts_link(); ?>
-	<?php next_posts_link(); ?>
+	<?php next_posts_link( '&laquo; Older Updates' ); ?>
+	<?php previous_posts_link( 'Newer Updates &raquo;' ); ?>
 	
 <?php endif; ?>
 <?php wp_reset_postdata(); ?>
