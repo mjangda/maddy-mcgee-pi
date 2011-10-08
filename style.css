@@ -176,7 +176,9 @@ body {
 	    
 	    border-top: 6px solid transparent;
 	}
-	    .mm-menu-header ul a:hover {
+	    .mm-menu-header ul a:hover,
+	    .mm-menu-header ul a:active,
+	    .mm-menu-header ul a.mm-active {
 		border-top: 6px solid #514f66;
 	    }
 	.mm-menu-header ul a span {
@@ -197,7 +199,8 @@ body {
 		width: 119px;
 	    }
 		.mm-menu-header ul li.mm-menu-header-item-about a:hover span,
-		.mm-menu-header ul li.mm-menu-header-item-about a:active span {
+		.mm-menu-header ul li.mm-menu-header-item-about a:active span,
+		.mm-menu-header ul li.mm-menu-header-item-about a.mm-active span {
 		    background-image: url(images/menu-item-sub-dossiers.png);
 		}
 	    .mm-menu-header ul li.mm-menu-header-item-archives a {
@@ -205,7 +208,8 @@ body {
 		width: 139px;
 	    }
 		.mm-menu-header ul li.mm-menu-header-item-archives a:hover span,
-		.mm-menu-header ul li.mm-menu-header-item-archives a:active span {
+		.mm-menu-header ul li.mm-menu-header-item-archives a:active span,
+		.mm-menu-header ul li.mm-menu-header-item-archives a.mm-active span  {
 		    background-image: url(images/menu-item-sub-casefiles.png);
 		}
 	    .mm-menu-header ul li.mm-menu-header-item-links a {
@@ -213,7 +217,8 @@ body {
 		width: 157px;
 	    }
 		.mm-menu-header ul li.mm-menu-header-item-links a:hover span,
-		.mm-menu-header ul li.mm-menu-header-item-links a:active span {
+		.mm-menu-header ul li.mm-menu-header-item-links a:active span,
+		.mm-menu-header ul li.mm-menu-header-item-links a.mm-active span  {
 		    background-image: url(images/menu-item-sub-references.png);
 		}
 	    .mm-menu-header ul li.mm-menu-header-item-etc a {
@@ -221,7 +226,8 @@ body {
 		width: 120px;
 	    }
 		.mm-menu-header ul li.mm-menu-header-item-etc a:hover span,
-		.mm-menu-header ul li.mm-menu-header-item-etc a:active span {
+		.mm-menu-header ul li.mm-menu-header-item-etc a:active span,
+		.mm-menu-header ul li.mm-menu-header-item-etc a.mm-active span  {
 		    background-image: url(images/menu-item-sub-evidence.png);
 		}
 	    .mm-menu-header ul li.mm-menu-header-item-contact a {
@@ -229,7 +235,8 @@ body {
 		width: 116px;
 	    }
 		.mm-menu-header ul li.mm-menu-header-item-contact a:hover span,
-		.mm-menu-header ul li.mm-menu-header-item-contact a:active span {
+		.mm-menu-header ul li.mm-menu-header-item-contact a:active span,
+		.mm-menu-header ul li.mm-menu-header-item-contact a.mm-active span  {
 		    background-image: url(images/menu-item-sub-contact.png);
 		}
 	
@@ -346,11 +353,13 @@ body {
     #mm-content a:active {
 	color: #514F66;
     }
+    #mm-content h1,
     #mm-content h2,
     #mm-content h3 {
 	font-family: Impact, Arial, sans-serif;
 	text-transform: uppercase;
 	letter-spacing: 1px;
+	color: #514f66;
     }
 
 /** Footer **/

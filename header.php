@@ -43,7 +43,7 @@
 		<ul>
 		<?php foreach( MaddyMcGee::get_header_menu_items() as $menu_item_key => $menu_item ) : ?>
 		    <li class="mm-menu-item mm-menu-header-item mm-menu-header-item-<?php echo $menu_item_key; ?>">
-			<a href="<?php echo home_url( $menu_item_key != 'home' ? $menu_item_key : '' ); ?>">
+			<a href="<?php echo home_url( $menu_item_key != 'home' ? $menu_item_key : '' ); ?>" class="<?php echo is_page( $menu_item_key ) ? 'mm-active' : ''; ?>">
 			    <?php echo $menu_item['text'];?>
 			    <?php if( isset( $menu_item['subtext'] ) ) : ?>
 				<span><?php echo $menu_item['subtext']; ?></span>
