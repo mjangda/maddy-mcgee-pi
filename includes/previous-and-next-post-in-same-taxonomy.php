@@ -259,7 +259,12 @@ function be_get_boundary_post( $in_same_cat = false, $excluded_categories = '', 
 		
 	);
 
-	return get_posts( $args );
+	$posts = get_posts( $args );
+	
+	if( ! empty( $posts ) && is_array( $posts ) )
+		return array_pop( $posts );
+	
+	return false;
 }
 
 /**
