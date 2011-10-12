@@ -219,7 +219,7 @@ function be_get_boundary_post( $in_same_cat = false, $excluded_categories = '', 
 		return null;
 
 	$cat_array = array();
-	if( ! is_array( $excluded_categories ) )
+	if( ! is_array( $excluded_categories ) && ! empty( $excluded_categories ) )
 		$excluded_categories = explode( ',', $excluded_categories );
 		
 	if ( $in_same_cat || ! empty( $excluded_categories ) ) {
@@ -234,6 +234,8 @@ function be_get_boundary_post( $in_same_cat = false, $excluded_categories = '', 
 			foreach ( $excluded_categories as $excluded_category )
 				$inverse_cats[] = $excluded_category * -1;
 			$excluded_categories = $inverse_cats;
+		} else {
+			$excluded_categories = array();
 		}
 	}
 
@@ -242,6 +244,7 @@ function be_get_boundary_post( $in_same_cat = false, $excluded_categories = '', 
 	$order = $start ? 'ASC' : 'DESC';
 	
 	$args = array(
+		'post_type' => 'any',
 		'posts_per_page' => '1',
 		'order' => $order,
 		'update_post_term_cache' => false,
