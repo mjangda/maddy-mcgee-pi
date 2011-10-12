@@ -4,7 +4,8 @@ require_once( dirname( __FILE__ ) . '/includes/ComicManager.php' );
 
 class MaddyMcGee {
 
-	var $comic_manager;
+	private static $instance;
+	private $comic_manager;
 
 	function __construct() {
 		$this->comic_manager = new ComicManager;
@@ -18,11 +19,15 @@ class MaddyMcGee {
 		add_action( 'wp_footer', array( $this, 'wp_footer' ) );
 		
 		add_filter( 'comic_link_permalink', array( $this, 'comic_link_add_jump' ) );
-		
+	}
+
+	static function i() {
+		if( ! isset( self::$instance ) )
+			self::$instance = new MaddyMcGee;
+		return self::$instance;
 	}
 
 	function init() {
-		
 	}
 	
 	function admin_init() {
@@ -86,6 +91,13 @@ class MaddyMcGee {
 	function widgets_init() {
 	}
 	
+	function get_characters() {
+		return $this->comic_manager->get_all_characters();
+	}
+	function get_characters_query() {
+		return $this->comic_manager->get_all_characters_query();
+	}
+	
 	/*
 	function get_quote_character( $post_id = 0 ) {
 		$post_id = self::get_post_id( $post_id );
@@ -114,8 +126,5 @@ class MaddyMcGee {
 	}
 }
 
-function mmg() {
-	
-}
-
-$mmg = new MaddyMcGee;
+// get instance to initialize
+MaddyMcGee::i();

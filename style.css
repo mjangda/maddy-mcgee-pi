@@ -367,3 +367,13 @@ body {
     margin: 10px 0;
     text-align: center;
 }
+
+/** Specific content styling **/
+.mm-characters {
+}
+.mm-character-single {
+    padding-bottom: 20px;
+}
+    .mm-character-single .mm-character-image {
+	float: right;
+    }

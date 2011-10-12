@@ -14,6 +14,8 @@
 			<?php get_template_part( 'loop', 'comic' ); ?>
 		<?php elseif( is_single() ) : ?>
 			<?php get_template_part( 'content', 'post' ); ?>
+		<?php elseif( is_page() ) : ?>
+			<?php get_template_part( 'content', 'page' ); ?>
 		<?php else : ?>
 			<?php get_template_part( 'loop' ); ?>
 		<?php endif; ?>
@@ -29,17 +31,18 @@
 /*
 
 * Post styling
-* Post meta
+* Post meta styling
 * Single Post
 * Single Page
-* Archives
-* Archive Loops
+* Archives (Series, Character, and Posts)
+* Archive Loops (Series, Character, and Posts)
 * Back to Beginning
-* Next / Prev Case
 * Character Info
 * Character List
 * Series Info
 * Series List
+
+* Next / Prev Case
 
 */
 ?>

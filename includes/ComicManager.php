@@ -210,9 +210,37 @@ class ComicManager {
 	}
 	
 	// get series
+	function get_all_series() {
+		return $this->get_objects( self::series_post_type );
+	}
 	
 	// get characters
+	function get_all_characters() {
+		return $this->get_all_objects( self::character_post_type );
+	}
+	function get_all_characters_query() {
+		return $this->get_all_objects_query( self::character_post_type );
+	}
 	
-	// get comics with character
+	function get_all_objects_query( $object_type ) {
+		$cache_key = 'comicmanager-objects-' . $object_type . '-query';
+		$objects_query = wp_cache_get( $cache_key );
+		
+		if( $objects_query === false ) {
+			$objects_query = new WP_Query( array(
+				'posts_per_page' => -1,
+				'post_type' => $object_type,
+			) );
+			wp_cache_set( $cache_key, $objects_query );
+		}
+		return $objects_query;
+	}
+	
+	function get_all_objects( $object_type ) {
+		$query = $this->get_all_objects_query( $object_type );
+		if( is_a( $query, 'WP_Query' ) )
+			return $query->posts;
+		return array();
+	}
 	
 }
