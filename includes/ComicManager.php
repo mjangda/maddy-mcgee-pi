@@ -185,6 +185,20 @@ class ComicManager {
 			return get_adjacent_post( false, '', true );
 	}
 	
+	function get_first_comic() {
+		if( function_exists( 'be_get_boundary_post' ) )
+			return be_get_boundary_post( true, '', true, self::series_taxonomy );
+		else
+			return get_boundary_post( true, '', true );
+	}
+	
+	function get_last_comic() {
+		if( function_exists( 'be_get_boundary_post' ) )
+			return be_get_boundary_post( true, '', false, self::series_taxonomy );
+		else
+			return get_boundary_post( true, '', false );
+	}
+	
 	function get_next_comic_link( $text = 'Next', $attributes = array() ) {
 		$comic = self::get_next_comic();
 		$attributes['rel'] = 'next';
@@ -193,6 +207,16 @@ class ComicManager {
 	function get_previous_comic_link( $text = 'Previous', $attributes = array() ) {
 		$comic = self::get_previous_comic();
 		$attributes['rel'] = 'previous';
+		return self::get_comic_link( $comic, $text, $attributes );
+	}
+	function get_first_comic_link( $text = 'First', $attributes = array() ) {
+		$comic = self::get_first_comic();
+		$attributes['rel'] = 'first';
+		return self::get_comic_link( $comic, $text, $attributes );
+	}
+	function get_last_comic_link( $text = 'Latest', $attributes = array() ) {
+		$comic = self::get_last_comic();
+		$attributes['rel'] = 'last';
 		return self::get_comic_link( $comic, $text, $attributes );
 	}
 	

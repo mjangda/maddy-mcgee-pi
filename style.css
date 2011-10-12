@@ -303,28 +303,31 @@ body {
 	overflow: hidden;
 	padding: 20px 0;
     }
-	.mm-comic-series-nav a {
+	.mm-comic-series-nav .mm-comic-series-nav-link {
 	    width: 33%;
 	    float: left;
 	    text-align: center;
-	    font-size: 24px;
-	    text-decoration: none;
-	    text-transform: uppercase;
-	    font-family: Impact, Arial, Serif;
-	    letter-spacing: 1px;
-	    color: #c4c3d5;
 	}
+	    .mm-comic-series-nav a,
+	    .mm-comic-series-nav a:visited {
+		font-size: 24px;
+		text-decoration: none;
+		text-transform: uppercase;
+		font-family: Impact, Arial, Serif;
+		letter-spacing: 1px;
+		color: #c4c3d5;
+	    }
 	    .mm-comic-series-nav a:hover,
 	    .mm-comic-series-nav a:active {
 		color: #fff;
 	    }
-	.mm-comic-series-nav a[rel=previous] {
+	.mm-comic-series-nav .mm-comic-series-nav-link.previous {
 	    text-align: left;
 	}
-	.mm-comic-series-nav a[rel=first] {
+	.mm-comic-series-nav .mm-comic-series-nav-link.first {
 	    width: 40%;
 	}
-	.mm-comic-series-nav a[rel=next] {
+	.mm-comic-series-nav .mm-comic-series-nav-link.next {
 	    text-align: right;
 	    width: 26%;
 	}

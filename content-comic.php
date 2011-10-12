@@ -26,12 +26,12 @@
 		</span>
 	</div>
 	
-	<div class="mm-comic-series-nav">
-		<a href="#" rel="previous">Previous Case</a>
-		<a href="#" rel="first">Back to the beginning</a>
-		<a href="#" rel="next">Next Case</a>
-	</div>
+	<nav class="mm-comic-series-nav">
+		<span class="mm-comic-series-nav-link prev">&nbsp;<!--<a href="#" rel="previous">Previous Case</a>--></span>
+		<span class="mm-comic-series-nav-link first"><?php echo ComicManager::get_first_comic_link( 'Back to the beginning' ); ?></span>
+		<span class="mm-comic-series-nav-link next">&nbsp;<!--<a href="#" rel="next">Next Case</a>--></span>
+	</nav>
 	<?php
-	// click should go to next comic (need caching in next link function)
+	// TODO: click should go to next comic (need caching in next link function)
 	?>
 </div>
