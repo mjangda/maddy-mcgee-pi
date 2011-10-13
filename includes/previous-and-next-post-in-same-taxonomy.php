@@ -215,7 +215,7 @@ function be_prev_post_rel_link($title = '%title', $in_same_cat = false, $exclude
 function be_get_boundary_post( $in_same_cat = false, $excluded_categories = '', $start = true, $taxonomy = 'category' ) {
 	global $post;
 
-	if ( empty($post) || ! is_single() || is_attachment() )
+	if ( empty($post) )
 		return null;
 
 	$cat_array = array();
@@ -261,8 +261,11 @@ function be_get_boundary_post( $in_same_cat = false, $excluded_categories = '', 
 
 	$posts = get_posts( $args );
 	
-	if( ! empty( $posts ) && is_array( $posts ) )
-		return array_pop( $posts );
+	if( ! empty( $posts ) && is_array( $posts ) ) {
+		$boundary_post = array_pop( $posts );
+		if( $boundary_post->ID != $post->ID )
+			return $boundary_post;
+	}
 	
 	return false;
 }
