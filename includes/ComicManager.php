@@ -103,7 +103,7 @@ class ComicManager {
 		) );
 		
 		register_taxonomy( self::character_taxonomy, self::comic_post_type, array(
-			'hierarchical' => false,
+			'hierarchical' => true,
 			'label' => 'Character',
 			'show_ui' => true,
 			'query_var' => true, // TODO: false
@@ -140,7 +140,7 @@ class ComicManager {
 		) );
 		
 		register_taxonomy( self::series_taxonomy, self::comic_post_type ,array(
-			'hierarchical' => false,
+			'hierarchical' => true,
 			'label' => 'Series',
 			'show_ui' => true,
 			'query_var' => true, // TODO: false
