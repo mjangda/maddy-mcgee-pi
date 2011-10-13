@@ -36,11 +36,12 @@
 * Single Page
 * Archives (Series, Character, and Posts)
 * Archive Loops (Series, Character, and Posts)
-* Back to Beginning
 * Character Info
 * Character List
 * Series Info
 * Series List
+
+* Prev-Next plugin caching
 
 * Next / Prev Case
 

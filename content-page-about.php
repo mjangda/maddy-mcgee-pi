@@ -5,7 +5,7 @@
 What concept can be more bizarre than that? Well, there's the fact that Maddy's friends agreed to join her without question.</p>
 
 <div class="mm-characters">
-	<?php $characters_query = MaddyMcGee::i()->get_characters_query(); ?>
+	<?php $characters_query = ComicManager::get_all_characters_query(); ?>
 	
 	<?php while( $characters_query->have_posts() ) : $characters_query->the_post(); ?>
 		<div class="mm-character-single">

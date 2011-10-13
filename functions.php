@@ -91,13 +91,6 @@ class MaddyMcGee {
 	function widgets_init() {
 	}
 	
-	function get_characters() {
-		return $this->comic_manager->get_all_characters();
-	}
-	function get_characters_query() {
-		return $this->comic_manager->get_all_characters_query();
-	}
-	
 	/*
 	function get_quote_character( $post_id = 0 ) {
 		$post_id = self::get_post_id( $post_id );

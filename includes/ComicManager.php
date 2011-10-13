@@ -235,15 +235,15 @@ class ComicManager {
 	
 	// get series
 	function get_all_series() {
-		return $this->get_objects( self::series_post_type );
+		return self::get_objects( self::series_post_type );
 	}
 	
 	// get characters
 	function get_all_characters() {
-		return $this->get_all_objects( self::character_post_type );
+		return self::get_all_objects( self::character_post_type );
 	}
 	function get_all_characters_query() {
-		return $this->get_all_objects_query( self::character_post_type );
+		return self::get_all_objects_query( self::character_post_type );
 	}
 	
 	function get_all_objects_query( $object_type ) {
@@ -261,7 +261,7 @@ class ComicManager {
 	}
 	
 	function get_all_objects( $object_type ) {
-		$query = $this->get_all_objects_query( $object_type );
+		$query = self::get_all_objects_query( $object_type );
 		if( is_a( $query, 'WP_Query' ) )
 			return $query->posts;
 		return array();
