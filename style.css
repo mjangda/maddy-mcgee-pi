@@ -321,12 +321,13 @@ body {
     }
     .mm-comic-content {
 	font-size: 18px;
-	line-height: 23px;
+	line-height: 22px;
 	width: 70%;
 	float: left;
     }
 	.mm-comic-content p {
-	    margin-bottom: 12px;
+		margin-bottom: 12px;
+		line-height: 22px;
 	}
     .mm-comic-meta {
 	float: right;
