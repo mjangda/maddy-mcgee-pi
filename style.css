@@ -404,11 +404,11 @@ body {
 }
     #mm-entries {
 	width: 510px;
-	float: right;
+	float: left;
     }
     #mm-sidebar {
 	width: 300px;
-	float: left;
+	float: right;
     }
     #mm-content a,
     #mm-content a:visited {
