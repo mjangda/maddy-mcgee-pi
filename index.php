@@ -7,11 +7,9 @@
 		<?php if( is_home() ) : ?>
 			<?php get_template_part( 'loop', 'recent' ); ?>
 		<?php elseif( is_tax( ComicManager::character_taxonomy ) ) : ?>
-			<?php get_template_part( 'content', 'character' ); ?>
-			<?php get_template_part( 'loop', 'comic' ); ?>
+			<?php get_template_part( 'archive', 'character' ); ?>
 		<?php elseif( is_tax( ComicManager::series_taxonomy ) ) : ?>
-			<?php get_template_part( 'content', 'series' ); ?>
-			<?php get_template_part( 'loop', 'comic' ); ?>
+			<?php get_template_part( 'archive', 'series' ); ?>
 		<?php elseif( is_single() ) : ?>
 			<?php get_template_part( 'content', 'post' ); ?>
 		<?php elseif( is_page() ) : ?>

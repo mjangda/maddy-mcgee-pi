@@ -8,14 +8,7 @@ What concept can be more bizarre than that? Well, there's the fact that Maddy's 
 	<?php $characters_query = ComicManager::get_all_characters_query(); ?>
 	
 	<?php while( $characters_query->have_posts() ) : $characters_query->the_post(); ?>
-		<div class="mm-character-single">
-			<?php // TODO: link to all comics ?>
-			<div class="mm-character-image"><?php the_post_thumbnail( 'full' ); ?></div>
-			<h3 class="mm-character-title"><?php the_title(); ?></h3>
-			<div class="mm-character-content">
-				<?php the_content(); ?>
-			</div>
-		</div>
+		<?php get_template_part( 'content', 'character' ); ?>
 	<?php endwhile; ?>
 	
 	<?php wp_reset_postdata(); ?>
