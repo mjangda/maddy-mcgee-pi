@@ -6,5 +6,9 @@
 	<div class="mm-content-post">
 		<?php the_content(); ?>
 	</div>
+	
+	<?php get_template_part( 'meta', 'post-tags' ); ?>
+	
+	<?php comments_template( '', true ); ?>
 
 <?php endwhile; ?>
