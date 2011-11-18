@@ -4,6 +4,9 @@
 		<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" >
 			<?php the_post_thumbnail( 'comic-medium' ); ?>
 		</a>
-		<?php the_excerpt(); ?>
+		<?php get_template_part( 'meta', 'comic' ); ?>
+		<div class="mm-excerpt-comment">
+			<?php the_excerpt(); ?>
+		</div>
 	<?php endwhile; ?>
 <?php endif; ?>

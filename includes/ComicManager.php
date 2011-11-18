@@ -227,12 +227,18 @@ class ComicManager {
 			foreach( (array) $attributes as $attribute_name => $attribute_value ) {
 				$attribute_string .= sprintf( '%s="%s"', sanitize_key( $attribute_name ), esc_attr( $attribute_value ) );
 			}
-			$permalink = apply_filters( 'comic_link_permalink', get_permalink( $comic->ID ) );
-			$link = sprintf( '<a href="%s" %s>%s</a>', $permalink, $attribute_string, $text );
+			$url = self::get_comic_url( $comic->ID );
+			$link = sprintf( '<a href="%s" %s>%s</a>', $url, $attribute_string, $text );
 		}
 		return $link;
 	}
-	
+
+	function get_comic_url( $comic_id ) {
+		if ( ! $comic_id )
+			return false;
+		return apply_filters( 'comic_link_permalink', get_permalink( $comic_id ) );
+	}
+
 	// get series
 	function get_all_series() {
 		return self::get_objects( self::series_post_type );

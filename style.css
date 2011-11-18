@@ -314,18 +314,18 @@ body {
 	#mm-comic a:active {
 	    color: #C4C3D5;
 	}
-    .mm-comic-image {
+    .mm-image-comic {
 	border: 10px solid #fff;
 	background: #fff;
 	margin: 5px 0 15px;
     }
-    .mm-comic-content {
+    .mm-content-comic {
 	font-size: 18px;
 	line-height: 22px;
 	width: 70%;
 	float: left;
     }
-	.mm-comic-content p {
+	.mm-content-comic p {
 		margin-bottom: 12px;
 		line-height: 22px;
 	}
@@ -344,20 +344,20 @@ body {
 	.mm-meta-comic span {
 	    display: block;
 	}
-    .mm-comic-nav {
+    .mm-nav-comic {
 	overflow: hidden;
     }
-	.mm-comic-nav a {
+	.mm-nav-comic a {
 	    font-size: 100px; /* Because we're using &raquo; &laquo; */
 	    line-height: 80px;
 	    font-family: Georgia, serif;
 	    text-decoration: none;
 	    margin-top: -20px; /* to account for the high font size */
 	}
-	.mm-comic-nav a[rel=previous] {
+	.mm-nav-comic a[rel=previous] {
 	    float: left;
 	}
-	.mm-comic-nav a[rel=next] {
+	.mm-nav-comic a[rel=next] {
 	    float: right;
 	}
     .mm-comic-series-nav {
