@@ -479,10 +479,10 @@ body {
 	.mm-nav-loop a {
 		text-decoration: none;
 	}
-	.mm-nav-loop-previous {
+	.mm-nav-loop-older {
 		float: left;
 	}
-	.mm-nav-loop-next {
+	.mm-nav-loop-newer {
 		float: right;
 	}
 	

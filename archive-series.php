@@ -1,4 +1,8 @@
 <?php
+// Series are sorted in chron asc, so we need the labels to be a bit different
+add_filter( 'mm_newer_posts_label', create_function( '', 'return "Continue <span rel=\"arrow\">&raquo;</span>";' ) ); // Don't judge me!
+add_filter( 'mm_older_posts_label', create_function( '', 'return "<span rel=\"arrow\">&laquo;</span> Back";' ) );
+
 $series_term = get_queried_object();
 $series_post = MaddyMcGee::get_series_post_from_term( $series_term );
 
