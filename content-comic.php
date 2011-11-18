@@ -14,17 +14,8 @@
 	<div class="mm-comic-content">
 		<?php the_content(); ?>
 	</div>
-	<div class="mm-comic-meta">
-		<span class="mm-comic-meta-info mm-comic-meta-date">
-			Posted: <a href="<?php the_permalink(); ?>"><?php echo sprintf( '%1$s at %2$s', get_the_date(), get_the_time() ); ?></a>
-		</span>
-		<span class="mm-comic-meta-info mm-comic-meta-series">
-			Series: <?php the_terms( 0, ComicManager::series_taxonomy ); ?>
-		</span>
-		<span class="mm-comic-meta-info mm-comic-meta-characters">
-			Featuring: <?php the_terms( 0, ComicManager::character_taxonomy ); ?>
-		</span>
-	</div>
+	
+	<?php get_template_part( 'meta', 'comic' ); ?>
 	
 	<nav class="mm-comic-series-nav">
 		<span class="mm-comic-series-nav-link prev">&nbsp;<!--<a href="#" rel="previous">Previous Case</a>--></span>

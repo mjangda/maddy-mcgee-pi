@@ -329,7 +329,7 @@ body {
 		margin-bottom: 12px;
 		line-height: 22px;
 	}
-    .mm-comic-meta {
+    .mm-meta-comic {
 	float: right;
 	width: 25%;
 	background: #C4C3D5;
@@ -337,11 +337,11 @@ body {
 	padding: 10px;
 	color: #514F66;
     }
-	#mm-comic .mm-comic-meta a:hover,
-	#mm-comic .mm-comic-meta a:active {
+	#mm-comic .mm-meta-comic a:hover,
+	#mm-comic .mm-meta-comic a:active {
 	    color: #514F66;
 	}
-	.mm-comic-meta span {
+	.mm-meta-comic span {
 	    display: block;
 	}
     .mm-comic-nav {
@@ -401,6 +401,7 @@ body {
     color: #514F66;
     padding: 15px 30px;
     overflow: hidden;
+    font-size: 14px;
 }
     #mm-entries {
 	width: 510px;
@@ -425,6 +426,9 @@ body {
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	color: #514f66;
+    }
+    #mm-content p {
+	margin-bottom: 10px;
     }
 
 /** Footer **/
