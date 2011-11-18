@@ -436,19 +436,31 @@ body {
 	margin-bottom: 20px;
 }
 	.mm-content-post,
-	.mm-excerpt-post {
+	.mm-excerpt-post,
+	.mm-excerpt-comic {
 		margin: 10px 0;
 	}
 		.mm-content-post p,
-		.mm-excerpt-post p {
+		.mm-excerpt-post p,
+		.mm-excerpt-comic p {
 			font-size: 16px;
 			line-height: 24px;
 		}
-	.mm-meta-post {
+	.mm-meta-post,
+	.mm-meta-comic {
 		font-style: italic;
 		border-left: 5px solid #514f66;
 		padding-left:5px;
 		padding: 3px 0 3px 5px;
+	}
+.mm-comic-excerpt {
+}
+	.mm-comic-excerpt .mm-meta-comic {
+		float: none;
+		width: auto;
+	}
+	.mm-comic-excerpt .mm-meta-comic span {
+		display: inline;
 	}
 
 /** Footer **/

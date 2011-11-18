@@ -4,7 +4,7 @@ $next_comic_url = ComicManager::get_comic_url( $next_comic );
 ?>
 
 <a name="comic"></a>
-<div id="mm-comic">
+<div id="mm-comic" <?php post_class(); ?>>
 	<nav class="mm-nav-comic">
 		<?php
 		echo ComicManager::get_previous_comic_link( '&laquo;' );
