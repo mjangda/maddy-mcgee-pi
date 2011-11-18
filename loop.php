@@ -4,8 +4,7 @@
 		<?php get_template_part( 'content', 'post-excerpt' ); ?>
 	<?php endwhile; ?>
 	
-	<?php previous_posts_link(); ?>
-	<?php next_posts_link(); ?>
+	<?php get_template_part( 'meta', 'nav-loop' ); ?>
 	
 <?php endif; ?>
 <?php wp_reset_postdata(); ?>

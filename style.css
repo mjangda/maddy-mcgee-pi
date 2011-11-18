@@ -463,6 +463,30 @@ body {
 		display: inline;
 	}
 
+.mm-nav-loop {
+	font-size: 24px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-family: Impact, Arial, Serif;
+	letter-spacing: 1px;
+	line-height: 30px;
+	overflow: hidden;
+}
+	.mm-nav-loop span[rel=arrow] {
+		font-family: Georgia, serif;
+		font-size: 35px;
+	}
+	.mm-nav-loop a {
+		text-decoration: none;
+	}
+	.mm-nav-loop-previous {
+		float: left;
+	}
+	.mm-nav-loop-next {
+		float: right;
+	}
+	
+
 /** Footer **/
 #mm-footer {
     margin: 10px 0;
