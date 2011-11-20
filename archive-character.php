@@ -1,6 +1,6 @@
 <?php
 $character_term = get_queried_object();
-$character_post = MaddyMcGee::get_character_post_from_term( $character_term );
+$character_post = ComicManager::get_character_post_from_term( $character_term );
 
 if ( ! $character_post )
 	return;

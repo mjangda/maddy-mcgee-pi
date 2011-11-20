@@ -272,5 +272,22 @@ class ComicManager {
 			return $query->posts;
 		return array();
 	}
+
+	function get_character_post_from_term( $term ) {
+		return ComicManager::get_synced_post_from_term( $term, ComicManager::character_taxonomy );
+	}
+
+	function get_series_post_from_term( $term ) {
+		return ComicManager::get_synced_post_from_term( $term, ComicManager::series_taxonomy );
+	}
+
+	function get_synced_post_from_term( $term, $taxonomy ) {
+		if ( function_exists( 'x_get_synced_post' ) ) {
+			$post = x_get_synced_post( $term, $taxonomy );
+			wp_reset_postdata();
+			return $post;
+		}
+		return false;
+	}
 	
 }

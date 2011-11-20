@@ -4,7 +4,7 @@ add_filter( 'mm_newer_posts_label', create_function( '', 'return "Continue <span
 add_filter( 'mm_older_posts_label', create_function( '', 'return "<span rel=\"arrow\">&laquo;</span> Back";' ) );
 
 $series_term = get_queried_object();
-$series_post = MaddyMcGee::get_series_post_from_term( $series_term );
+$series_post = ComicManager::get_series_post_from_term( $series_term );
 
 if ( ! $series_post )
 	return;
