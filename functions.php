@@ -28,6 +28,7 @@ class MaddyMcGee {
 	}
 
 	function init() {
+		add_shortcode( 'mm-characters', array( $this, 'characters_shortcode' ) );
 	}
 	
 	function admin_init() {
@@ -116,6 +117,22 @@ class MaddyMcGee {
 	
 	function comic_link_add_jump( $permalink ) {
 		return sprintf( '%s#comic', $permalink );
+	}
+
+	function characters_shortcode() {
+		ob_start(); // have to use buffering because we're relying on a template part
+		?>
+		<div class="mm-characters">
+		<?php $characters_query = ComicManager::get_all_characters_query(); ?>	
+			<?php while( $characters_query->have_posts() ) : $characters_query->the_post(); ?>
+				<?php get_template_part( 'content', 'character' ); ?>
+			<?php endwhile; ?>
+			<?php wp_reset_postdata(); ?>
+		</div>
+		<?php
+		$content = ob_get_contents();
+		ob_end_clean();
+		return $content;
 	}
 }
 
