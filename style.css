@@ -399,7 +399,7 @@ body {
 /** Content **/
 #mm-content {
     background: #c4c3d5;
-    color: #514F66;
+	color: #4D4B52;
     padding: 15px 30px;
     overflow: hidden;
     font-size: 14px;
@@ -414,11 +414,11 @@ body {
     }
     #mm-content a,
     #mm-content a:visited {
-	color: #fff;
+	color: #514F66;
     }
     #mm-content a:hover,
     #mm-content a:active {
-	color: #514F66;
+	color: #292D1F;
     }
     #mm-content h1,
     #mm-content h2,
@@ -426,7 +426,7 @@ body {
 	font-family: Impact, Arial, sans-serif;
 	text-transform: uppercase;
 	letter-spacing: 1px;
-	color: #514f66;
+	color: #020629;
     }
     #mm-content p {
 	margin-bottom: 10px;
