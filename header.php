@@ -18,6 +18,7 @@
     <link rel="profile" href="http://gmpg.org/xfn/11" />
     <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
     <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
+    <link rel="icon" href="http://img.photobucket.com/albums/v36/Dayuse/Comics/Maddy/favicon.gif" type="image/gif" >
     <!--[if lt IE 9]>
     <script src="<?php echo get_template_directory_uri(); ?>/js/html5.js" type="text/javascript"></script>
     <script type="text/javascript" src="http://use.typekit.com/gvh2skr.js"></script>
