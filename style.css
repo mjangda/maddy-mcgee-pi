@@ -373,8 +373,9 @@ body {
 	}
 	    .mm-comic-series-nav a,
 	    .mm-comic-series-nav a:visited {
-		font-size: 18px;
+		font-size: 16px;
 		text-decoration: none;
+		font-weight: bold;
 		text-transform: uppercase;
 		font-family: league-gothic-1, league-gothic-2, Futura, Arial, Serif;
 		letter-spacing: 1px;
