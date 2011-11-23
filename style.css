@@ -373,7 +373,7 @@ body {
 	}
 	    .mm-comic-series-nav a,
 	    .mm-comic-series-nav a:visited {
-		font-size: 24px;
+		font-size: 18px;
 		text-decoration: none;
 		text-transform: uppercase;
 		font-family: Verdana, Arial, Serif;
@@ -464,7 +464,7 @@ body {
 	}
 
 .mm-nav-loop {
-	font-size: 24px;
+	font-size: 18px;
 	text-decoration: none;
 	text-transform: uppercase;
 	font-family: Verdana, Arial, Serif;
