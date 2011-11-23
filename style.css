@@ -376,7 +376,7 @@ body {
 		font-size: 24px;
 		text-decoration: none;
 		text-transform: uppercase;
-		font-family: Impact, Arial, Serif;
+		font-family: Verdana, Arial, Serif;
 		letter-spacing: 1px;
 		color: #c4c3d5;
 	    }
@@ -423,7 +423,7 @@ body {
     #mm-content h1,
     #mm-content h2,
     #mm-content h3 {
-	font-family: Impact, Arial, sans-serif;
+	font-family: Verdana, Arial, sans-serif;
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	color: #020629;
@@ -467,7 +467,7 @@ body {
 	font-size: 24px;
 	text-decoration: none;
 	text-transform: uppercase;
-	font-family: Impact, Arial, Serif;
+	font-family: Verdana, Arial, Serif;
 	letter-spacing: 1px;
 	line-height: 30px;
 	overflow: hidden;
