@@ -29,7 +29,7 @@ $next_comic_url = ComicManager::get_comic_url( $next_comic );
 	
 	<nav class="mm-comic-series-nav">
 		<span class="mm-comic-series-nav-link prev">&nbsp;<!--<a href="#" rel="previous">Previous Case</a>--></span>
-		<span class="mm-comic-series-nav-link first"><?php echo ComicManager::get_first_comic_link( 'Back to the beginning' ); ?></span>
+		<span class="mm-comic-series-nav-link first"><?php echo ComicManager::get_first_comic_link( 'Back to the beginning' ); ?> | <a href="http://www.maddymcgeepi.com/">Latest page</a></span>
 		<span class="mm-comic-series-nav-link next">&nbsp;<!--<a href="#" rel="next">Next Case</a>--></span>
 	</nav>
 </div>
