@@ -20,6 +20,8 @@
     <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
     <!--[if lt IE 9]>
     <script src="<?php echo get_template_directory_uri(); ?>/js/html5.js" type="text/javascript"></script>
+    <script type="text/javascript" src="http://use.typekit.com/gvh2skr.js"></script>
+<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
     <![endif]-->
     <?php
     // Support for threaded comments
