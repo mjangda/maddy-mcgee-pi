@@ -21,9 +21,9 @@
     <link rel="icon" href="http://img.photobucket.com/albums/v36/Dayuse/Comics/Maddy/favicon.gif" type="image/gif" >
     <!--[if lt IE 9]>
     <script src="<?php echo get_template_directory_uri(); ?>/js/html5.js" type="text/javascript"></script>
+    <![endif]-->
     <script type="text/javascript" src="http://use.typekit.com/gvh2skr.js"></script>
 <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-    <![endif]-->
     <?php
     // Support for threaded comments
     if ( is_singular() && get_option( 'thread_comments' ) )
