@@ -15,6 +15,7 @@
     <meta charset="<?php bloginfo( 'charset' ); ?>" />
     <meta name="viewport" content="width=device-width" />
     <title><?php bloginfo('name'); ?> &raquo; <?php is_home() ? bloginfo('description') : wp_title(''); ?></title>
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,900' rel='stylesheet' type='text/css'>
     <link rel="profile" href="http://gmpg.org/xfn/11" />
     <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
     <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
@@ -22,8 +23,6 @@
     <!--[if lt IE 9]>
     <script src="<?php echo get_template_directory_uri(); ?>/js/html5.js" type="text/javascript"></script>
     <![endif]-->
-    <script type="text/javascript" src="http://use.typekit.com/gvh2skr.js"></script>
-<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
     <?php
     // Support for threaded comments
     if ( is_singular() && get_option( 'thread_comments' ) )
