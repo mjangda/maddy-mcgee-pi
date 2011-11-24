@@ -375,9 +375,9 @@ body {
 	    .mm-comic-series-nav a:visited {
 		font-size: 16px;
 		text-decoration: none;
-		font-weight: bold;
+		font-weight: 900;
 		text-transform: uppercase;
-		font-family: league-gothic-1, league-gothic-2, Futura, Arial, Serif;
+		font-family: 'Lato', Arial, sans-serif;
 		letter-spacing: 1px;
 		color: #c4c3d5;
 	    }
@@ -424,7 +424,8 @@ body {
     #mm-content h1,
     #mm-content h2,
     #mm-content h3 {
-	font-family: league-gothic-1,league-gothic-2, Futura, Arial, sans-serif;
+	font-family: 'Lato', Arial, sans-serif;
+	font-weight: 900;
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	color: #020629;
@@ -468,7 +469,8 @@ body {
 	font-size: 18px;
 	text-decoration: none;
 	text-transform: uppercase;
-	font-family: league-gothic-1, league-gothic-2, Futura, Arial, Serif;
+	font-family: 'Lato', Arial, sans-serif;
+	font-weight: 900;
 	letter-spacing: 1px;
 	line-height: 30px;
 	overflow: hidden;
