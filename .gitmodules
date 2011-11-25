@@ -1,6 +1,3 @@
-[submodule "includes/wpcom-open-graph"]
-	path = includes/wpcom-open-graph
-	url = git://gist.github.com/1196068.git
 [submodule "includes/ComicManager/includes/taxonomy-to-post_type-sync"]
 	path = includes/ComicManager/includes/taxonomy-to-post_type-sync
 	url = git://github.com/mjangda/taxonomy-to-post_type-sync.git
