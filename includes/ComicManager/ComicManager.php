@@ -1,8 +1,8 @@
 <?php
 
-require( dirname( __FILE__ ) . '/term-to-post_type-sync.class.php' );
+require( dirname( __FILE__ ) . '/includes/term-to-post_type-sync.class.php' );
 // TODO: plugin needs caching
-require_once( dirname( __FILE__ ) . '/previous-and-next-post-in-same-taxonomy.php' );
+require_once( dirname( __FILE__ ) . '/includes/previous-and-next-post-in-same-taxonomy.php' );
 
 /*
 
