@@ -1,0 +1,3 @@
+[submodule "includes/wpcom-open-graph"]
+	path = includes/wpcom-open-graph
+	url = git@gist.github.com:1196068.git
