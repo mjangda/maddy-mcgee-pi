@@ -1,7 +1,6 @@
 <?php
 
 require_once( dirname( __FILE__ ) . '/includes/ComicManager/ComicManager.php' );
-include( dirname( __FILE__ ) . '/includes/wpcom-open-graph/wpcom-open-graph.php' );
 
 class MaddyMcGee {
 
