@@ -211,6 +211,7 @@ body {
 	width: 100%;
 	height: 50px;
 	margin-top: -15px;
+	text-decoration: none;
     }
 
 .mm-menu-header {
@@ -416,6 +417,7 @@ body {
     #mm-content a,
     #mm-content a:visited {
 	color: #514F66;
+	text-decoration: none;
     }
     #mm-content a:hover,
     #mm-content a:active {
@@ -437,6 +439,7 @@ body {
 .mm-post {
 	margin-bottom: 20px;
 }
+
 	.mm-content-post,
 	.mm-excerpt-post,
 	.mm-excerpt-comic {
