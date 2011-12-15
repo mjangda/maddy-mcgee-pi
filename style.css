@@ -217,7 +217,7 @@ body {
 .mm-menu-header {
     background: #c4c3d5;
     padding: 10px 0 5px;
-    margin: 10px 5px;
+    margin: 10px 0;
 }
     .mm-menu-header ul {
 	overflow: hidden;
