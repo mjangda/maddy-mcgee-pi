@@ -460,10 +460,13 @@ body {
 		padding: 3px 0 3px 5px;
 	}
 	.mm-meta-post,
-	.mm-comic-excerpt .mm-meta-comic a:link a:visited {
+	.mm-comic-excerpt .mm-meta-comic a:link {
 		color: #fff;
 	}
-
+	.mm-meta-post,
+	.mm-comic-excerpt .mm-meta-comic a:visited {
+		color: #fff;
+	}
 .mm-comic-excerpt {
 }
 	.mm-comic-excerpt .mm-meta-comic {
