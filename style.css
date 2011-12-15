@@ -436,7 +436,8 @@ body {
 	margin-bottom: 10px;
     }
     #mm-content .mm-meta-post-info a {
-    	color: #fff
+    	color: #fff;
+    	font-weight: 900;
     }
     
 .mm-post {
