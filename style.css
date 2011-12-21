@@ -416,13 +416,13 @@ body {
     }
     #mm-content a,
     #mm-content a:visited {
-	color: #fff;
+	color: #514F66;
 	text-decoration: none;
 	font-weight: 900;
     }
     #mm-content a:hover,
     #mm-content a:active {
-	color: #fff;
+	color: #514F66;
 	font-weight: 900;
     }
     #mm-content h1,
@@ -455,9 +455,9 @@ body {
 		}
 	.mm-meta-post,
 	.mm-comic-excerpt .mm-meta-comic {
-		color: #fff;
+		color: #514F66;
 		font-size: 10/13px;
-		background-color: #514f66;
+		background-color: #9592A7;
 		padding-left:5px;
 		padding-right:5px;
 		padding: 3px 0 3px 5px;
