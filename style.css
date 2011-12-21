@@ -439,6 +439,10 @@ body {
     	color: #C4C3D5;
     	font-weight: 900;
     }
+        #mm-content .mm-meta-comic-info a {
+    	color: #C4C3D5;
+    	font-weight: 900;
+    }
     
 .mm-post {
 	margin-bottom: 20px;
