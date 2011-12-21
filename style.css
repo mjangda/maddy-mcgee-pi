@@ -416,12 +416,12 @@ body {
     }
     #mm-content a,
     #mm-content a:visited {
-	color: #514F66;
+	color: #fff;
 	text-decoration: none;
     }
     #mm-content a:hover,
     #mm-content a:active {
-	color: #292D1F;
+	color: #fff;
     }
     #mm-content h1,
     #mm-content h2,
@@ -434,14 +434,6 @@ body {
     }
     #mm-content p {
 	margin-bottom: 10px;
-    }
-    #mm-content .mm-meta-post-info a {
-    	color: #C4C3D5;
-    	font-weight: 900;
-    }
-        #mm-content .mm-meta-comic-info a {
-    	color: #C4C3D5;
-    	font-weight: 900;
     }
     
 .mm-post {
