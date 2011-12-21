@@ -418,10 +418,12 @@ body {
     #mm-content a:visited {
 	color: #fff;
 	text-decoration: none;
+	font-weight: 900;
     }
     #mm-content a:hover,
     #mm-content a:active {
 	color: #fff;
+	font-weight: 900;
     }
     #mm-content h1,
     #mm-content h2,
