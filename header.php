@@ -39,9 +39,7 @@
 	    </section>
 	    <hgroup id="mm-logo">
 		<h1><a href="<?php echo home_url(); ?>"><?php bloginfo( 'name' ); ?></a></h1>
-		/*
 		<h2><a href="<?php echo home_url(); ?>"><?php bloginfo( 'description' ); ?></a></h2>
-	    	*/
 	    </hgroup>
 	    <nav class="mm-menu mm-menu-header">
 		<ul>
