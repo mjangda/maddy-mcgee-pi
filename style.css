@@ -192,7 +192,7 @@ body {
 
 #mm-page {
     width: 900px;
-    margin: 20px auto;
+    margin: 0 auto 20px;
 }
 
 #mm-logo {
