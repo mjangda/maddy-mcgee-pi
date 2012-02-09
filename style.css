@@ -192,7 +192,7 @@ body {
 
 #mm-page {
     width: 900px;
-    margin: 20px auto;
+    margin: -10px auto 20px;
 }
 
 #mm-logo {
@@ -203,7 +203,6 @@ body {
 	background: url(images/header-maddy.png) no-repeat center top;
 	width: 100%;
 	height: 170px;
-	margin-top: -35px;
     }
     #mm-logo h2 a {
 	display: block;
