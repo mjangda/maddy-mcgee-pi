@@ -349,10 +349,12 @@ body {
 	overflow: hidden;
     }
 	.mm-nav-comic a {
-	    font-size: 100px; /* Because we're using &raquo; &laquo; */
+	    font-size: 30px; /* Because we're using &raquo; &laquo; */
 	    line-height: 80px;
-	    font-family: Georgia, serif;
+	    font-family: "Lato", serif;
 	    text-decoration: none;
+	    text-transform: uppercase;
+	    font-weight: 900;
 	    margin-top: -20px; /* to account for the high font size */
 	}
 	.mm-nav-comic a[rel=previous] {
