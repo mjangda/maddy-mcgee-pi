@@ -24,7 +24,14 @@ $next_comic_url = ComicManager::get_comic_url( $next_comic );
 	<div class="mm-content-comic">
 		<?php the_content(); ?>
 	</div>
-	
+
+	<nav class="mm-nav-comic">
+		<?php
+		echo ComicManager::get_previous_comic_link( '&laquo;' );
+		echo ComicManager::get_next_comic_link( '&raquo;' );
+		?>
+	</nav>
+
 	<?php get_template_part( 'meta', 'comic' ); ?>
 	
 	<nav class="mm-comic-series-nav">
