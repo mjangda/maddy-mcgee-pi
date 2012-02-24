@@ -349,7 +349,7 @@ body {
 	overflow: hidden;
     }
 	.mm-nav-comic a {
-	    font-size: 30px; /* Because we're using &raquo; &laquo; */
+	    font-size: 50px; /* Because we're using &raquo; &laquo; */
 	    line-height: 80px;
 	    font-family: "Lato", serif;
 	    text-decoration: none;
@@ -389,6 +389,7 @@ body {
 	    }
 	.mm-comic-series-nav .mm-comic-series-nav-link.previous {
 	    text-align: left;
+	    font-size: 40px;
 	}
 	.mm-comic-series-nav .mm-comic-series-nav-link.first {
 	    width: 40%;
@@ -396,6 +397,7 @@ body {
 	.mm-comic-series-nav .mm-comic-series-nav-link.next {
 	    text-align: right;
 	    width: 26%;
+	    font-size: 40px;
 	}
     
 
