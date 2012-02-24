@@ -375,7 +375,7 @@ body {
 	}
 	    .mm-comic-series-nav a,
 	    .mm-comic-series-nav a:visited {
-		font-size: 22px;
+		font-size: 30px;
 		text-decoration: none;
 		font-weight: 900;
 		text-transform: uppercase;
@@ -389,7 +389,6 @@ body {
 	    }
 	.mm-comic-series-nav .mm-comic-series-nav-link.previous {
 	    text-align: left;
-	    font-size: 40px;
 	}
 	.mm-comic-series-nav .mm-comic-series-nav-link.first {
 	    width: 40%;
@@ -397,7 +396,6 @@ body {
 	.mm-comic-series-nav .mm-comic-series-nav-link.next {
 	    text-align: right;
 	    width: 26%;
-	    font-size: 40px;
 	}
     
 
