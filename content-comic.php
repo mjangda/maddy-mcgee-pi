@@ -26,19 +26,21 @@ $next_comic_url = ComicManager::get_comic_url( $next_comic );
 	</div>
 
 	<?php get_template_part( 'meta', 'comic' ); ?>
-	
+<?php /*
 	<div>
 	<nav class="mm-comic-series-nav">
 		<span class="mm-comic-series-nav-link previous"><!--<a href="#" rel="previous">Previous Case</a>--></span>
-		<span class="mm-comic-series-nav-link first"><?php echo ComicManager::get_first_comic_link( 'Back to the beginning' ); ?></span>
 		<span class="mm-comic-series-nav-link next"><!--<a href="#" rel="next">Next Case</a>--></span>
 	</nav>
 	</div>
+
+*/ ?>
 	
 	<div>
 	<nav class="mm-nav-comic">
 		<?php
 		echo ComicManager::get_previous_comic_link( '&laquo;' );
+		<span class="mm-comic-series-nav-link first"><?php echo ComicManager::get_first_comic_link( 'Back to the beginning' ); ?></span>
 		echo ComicManager::get_next_comic_link( '&raquo;' );
 		?>
 	</nav>
