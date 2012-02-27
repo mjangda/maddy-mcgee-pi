@@ -347,6 +347,7 @@ body {
 	}
     .mm-nav-comic {
 	overflow: hidden;
+	clear: both;
     }
 	.mm-nav-comic a {
 	    font-size: 50px; /* Because we're using &raquo; &laquo; */
@@ -362,6 +363,15 @@ body {
 	}
 	.mm-nav-comic a[rel=next] {
 	    float: right;
+	}
+	.mm-nav-comic .mm-comic-series-nav-link {
+		text-align: center;
+		width: 95%;
+		float: left;
+	}
+	.mm-nav-comic .mm-comic-series-nav-link a {
+		font-size: 22px;
+		line-height: 50px;
 	}
     .mm-comic-series-nav {
 	clear: both;
