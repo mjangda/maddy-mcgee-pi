@@ -393,6 +393,7 @@ body {
 	.mm-comic-series-nav .mm-comic-series-nav-link.first {
 	    width: 40%;
 	    text-align: center;
+	    margin: 0px auto;
 	}
 	.mm-comic-series-nav .mm-comic-series-nav-link.next {
 	    text-align: right;
