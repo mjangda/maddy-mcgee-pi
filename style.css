@@ -304,6 +304,7 @@ body {
 	
 /** Comics **/
 #mm-comic {
+    border-bottom: 1px dotted #C4C3D5;
     margin-bottom: 4px;
 }
     #mm-comic a,
