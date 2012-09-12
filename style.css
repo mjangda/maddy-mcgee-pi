@@ -429,12 +429,12 @@ body {
     }
     #mm-sidebar h3 {
     	font-size: 16px;
-    	letter-spacing: 0.05em;
+    	letter-spacing: -0.05em;
     	text-align: center;
     	color: #363447;
     	background: #9592A7;
-    	padding: 2px;
-    	margin: 2px auto;
+    	padding: 3px;
+    	margin: 3px auto;
     }
     #mm-content a,
     #mm-content a:visited {
