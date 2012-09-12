@@ -427,7 +427,7 @@ body {
     }
     #mm-sidebar {
 	width: 250px;
-	letter-spacing: -0.05em;
+	letter-spacing: -0.01em;
 	float: right;
     }
     #mm-sidebar h3 {
