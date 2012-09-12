@@ -428,6 +428,8 @@ body {
 	float: right;
     }
     #mm-sidebar h3 {
+    	font-size: 16px;
+    	letter-spacing: 0.05em;
     	text-align: center;
     	color: #363447;
     	background: #9592A7;
