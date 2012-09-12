@@ -427,6 +427,11 @@ body {
 	width: 250px;
 	float: right;
     }
+    #mm-sidebar h3 {
+    	color: #363447;
+    	background-color: #c4c3d5;
+    	padding: 2px;
+    }
     #mm-content a,
     #mm-content a:visited {
 	color: #363447;
