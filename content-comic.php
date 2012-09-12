@@ -48,5 +48,5 @@ $next_comic_url = ComicManager::get_comic_url( $next_comic );
 </div>
 
 <!-- Project Wonderful Ad Box Code -->
-<div style="text-align:center;margin:5px auto;"><div style="display:inline-block;margin:0;" id="pw_adbox_65747_6_0"></div></div>
+<div style="text-align:center;margin:5px auto;"><div style="display:inline-block;margin:0;padding:0" id="pw_adbox_65747_6_0"></div></div>
 <!-- End Project Wonderful Ad Box Code -->
