@@ -420,11 +420,11 @@ body {
     font-size: 14px;
 }
     #mm-entries {
-	width: 510px;
+	width: 560px;
 	float: left;
     }
     #mm-sidebar {
-	width: 300px;
+	width: 250px;
 	float: right;
     }
     #mm-content a,
