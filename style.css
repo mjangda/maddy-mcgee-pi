@@ -421,7 +421,7 @@ body {
 }
     #mm-entries {
 	width: 550px;
-	padding-right: 10px;
+	margin-right: 10px;
 	float: left;
 	border-right: 1px dotted #514F66;
     }
